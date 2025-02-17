@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Factorial {
-    // Recursive method to find factorial
     public static int factorial(int n) {
         if (n == 0 || n == 1) {
             return 1;
@@ -11,10 +10,11 @@ public class Factorial {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
-        System.out.println("Factorial of " + num + " is: " + factorial(num));
-        sc.close();
-        ;
+        System.out.print("Enter a number here :");
+        int n = sc.nextInt();
+        int fact = factorial(n);
+        System.out.println("Factorial of " + n + " is: " + fact);
+        sc.close();  
+        
     }
 }
