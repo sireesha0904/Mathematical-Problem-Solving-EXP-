@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class PrimeCheck {
-    // Recursive method to check if number is prime
     public static boolean isPrime(int n, int divisor) {
         if (n <= 1) {
             return false;
